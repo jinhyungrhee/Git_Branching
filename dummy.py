@@ -30,13 +30,11 @@ def m_sort(A, first, last):
 
   m_sort(A, first + third + 1, first + 2 * third)
 
-<<<<<<< HEAD
   m_sort(A, first + 2 * third + 1, last)
-=======
+
   m_sort(A, first + 2 * third + 1, last)
 
   # git reset 테스트
   merge(A, first, first + third, first + third + 1, first + 2 * third)
-
+  
   merge(A, first, first + 2 * third, first + 2 * third + 1, last)
->>>>>>> first
