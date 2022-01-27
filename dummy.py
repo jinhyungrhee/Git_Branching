@@ -20,3 +20,5 @@ def m_sort(A, first, last):
   # 3-way merge sort
 
   if first >= last: return
+
+  third = (last - first + 1) // 3
