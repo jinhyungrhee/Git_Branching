@@ -24,3 +24,10 @@ def m_sort(A, first, last):
   # 한 줄 추가
   third = (last - first + 1) // 3
   # git push origin develop - develop 브랜치 remote 레포지토리(origin)에 push!
+
+  # 나머지 부분 이어서 작성
+  m_sort(A, first, first + third)
+
+  m_sort(A, first + third + 1, first + 2 * third)
+
+  m_sort(A, first + 2 * third + 1, last)
