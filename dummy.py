@@ -21,4 +21,6 @@ def m_sort(A, first, last):
 
   if first >= last: return
 
+  # 한 줄 추가
   third = (last - first + 1) // 3
+  # git push origin develop - develop 브랜치 remote 레포지토리(origin)에 push!
