@@ -38,3 +38,14 @@ def m_sort(A, first, last):
   merge(A, first, first + third, first + third + 1, first + 2 * third)
   
   merge(A, first, first + 2 * third, first + 2 * third + 1, last)
+
+  # merge 테스트
+  def check(A):
+    for i in range(1, len(A)):
+      if A[i-1] > A[i]:
+        return False
+      return A[0] + A[(len(A)//2)] + A[-1]
+
+    A = [int(x) for x in input().split()]
+    m_sort(A, 0, len(A)-1)
+    print(check(A))
